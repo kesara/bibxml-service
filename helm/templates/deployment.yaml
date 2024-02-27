@@ -133,7 +133,6 @@ spec:
             - name: redis
               containerPort: 6379
               protocol: TCP
-
       {{- with .Values.volumes }}
       volumes:
         {{- toYaml . | nindent 8 }}
