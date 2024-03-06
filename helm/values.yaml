@@ -42,7 +42,7 @@ securityContext: {}
 service:
   type: ClusterIP
   port: 8000
-  targetPort: 80
+  targetPort: 8000
 
 ingress:
   enabled: false
@@ -136,5 +136,5 @@ env:
   REDIS_HOST: "localhost"
   REDIS_PORT: "6379"
   AUTO_REINDEX_INTERVAL: "5400"
-  SNAPSHOT: "{{ .Chart.AppVersion }}"
+  SNAPSHOT: "1.0.1"
   PORT: "8000"
